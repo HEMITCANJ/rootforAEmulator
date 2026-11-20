@@ -1,0 +1,39 @@
+{
+  "name": "rootforAEmulator",
+  "version": "1.0.0",
+  "release_date": "2026-11-20",
+  "package": "io.github.hemitcanj.rootforaemulator",
+  "_hint": "下载按钮优先下载站内文件（files[].file）。要改成 GitHub Release 下载见 app.js 顶部 TODO：把 btn.href 的优先级换成 url 优先，并把 files[].url 前缀 https://github.com/hemitcanj/rootforAEmulator/releases/download/v1.0.0/ 换成你自己的仓库地址（app.js 的 FALLBACK 里有一份副本，要同步改）。文件名保持 files[].file 不变，上传 Release 资产时用同样的名字。",
+  "files": [
+    {
+      "id": "apk",
+      "label": "APK 安装包",
+      "file": "rootforAEmulator-1.0.0-release.apk",
+      "url": "https://github.com/hemitcanj/rootforAEmulator/releases/download/v1.0.0/rootforAEmulator-1.0.0-release.apk",
+      "size": "1.1 MB",
+      "sha256": "c3d2f66afa1b2baab82bc28f4c7bec9eb1ff08ebb338916fa789098703d5b213"
+    },
+    {
+      "id": "html",
+      "label": "HTML 代码包",
+      "file": "rootforAEmulator-1.0.0-html.zip",
+      "url": "https://github.com/hemitcanj/rootforAEmulator/releases/download/v1.0.0/rootforAEmulator-1.0.0-html.zip",
+      "size": "19 KB"
+    }
+  ],
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-11-20",
+      "items": [
+        "su 代理白名单：备份系统 su 为 su.rfae-real，替换为按 UID 放行的代理脚本",
+        "白名单内嵌代理脚本 ALLOW_UIDS，更新即时生效，无额外文件读权限问题",
+        "拒绝的 su 调用写入 /data/local/rfae/access.log，日志页可查看/清空",
+        "部署时保留原 su 的 setuid 位与 SELinux 上下文",
+        "检测到 Magisk 类 su（/sbin、/debug_ramdisk）自动拒绝部署",
+        "一键恢复：用 su.rfae-real 还原系统原 su",
+        "release 构建：R8 混淆压缩（不加壳），包名 io.github.hemitcanj.rootforaemulator"
+      ]
+    }
+  ]
+}
