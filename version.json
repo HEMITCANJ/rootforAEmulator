@@ -8,8 +8,8 @@
     {
       "id": "apk",
       "label": "APK 安装包",
-      "file": "rootforAEmulator-1.0.0-release.apk",
-      "url": "https://github.com/hemitcanj/rootforAEmulator/releases/download/v1.0.0/rootforAEmulator-1.0.0-release.apk",
+      "file": "rootforAEmulator-1.0.0-release.beta.apk",
+      "url": "https://github.com/HEMITCANJ/TheRootForAEmulatorD/releases/download/v1.0.0beta/rootforAEmulator-1.0.0-release.beta.apk",
       "size": "1.1 MB",
       "sha256": "c3d2f66afa1b2baab82bc28f4c7bec9eb1ff08ebb338916fa789098703d5b213"
     },
