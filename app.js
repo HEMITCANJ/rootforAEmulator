@@ -128,7 +128,7 @@
       var btn = document.createElement("a");
       btn.className = "btn btn-primary";
       // 优先下载站内文件 f.file，没有再走 f.url（GitHub Release，见文件顶部 TODO）
-      btn.href = f.file || f.url;
+      btn.href = f.url || f.file;
       btn.setAttribute("download", "");
       btn.textContent = "下载";
 
@@ -176,7 +176,7 @@
     renderChangelog();
     var heroDl = document.getElementById("hero-dl");
     if (heroDl && data.files[0]) {
-      heroDl.href = data.files[0].file || data.files[0].url;
+      heroDl.href = data.files[0].url || data.files[0].file;
       heroDl.setAttribute("download", "");
     }
   }
