@@ -34,7 +34,7 @@
       {
         label: "HTML 代码包",
         file: "rootforAEmulator-1.0.0-html.zip",
-        url: "https://github.com/hemitcanj/rootforAEmulator/releases/download/v1.0.0/rootforAEmulator-1.0.0-html.zip",
+        url: "https://github.com/HEMITCANJ/rootforAEmulator.git",
         size: "19 KB"
       }
     ],
